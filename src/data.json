@@ -1,0 +1,185 @@
+{
+  "products":[
+    {
+      "_id":"ArsenalAway",
+      "title": "Arsenal Away 20/21",
+      "description": "Arsenal 20/21 Away Jersey Player Issue",
+      "price": 55,
+      "club": "Arsenal",
+      "Brand": "ADIDAS",
+      "image": "/images/ArsenalAway.jpg"
+    },
+    {
+      "_id": "ArsenalHome",
+      "title": "Arsenal Home 20/21",
+      "description": "Arsenal 20/21 Home Jersey Player Issue",
+      "price": 65,
+      "club": "Arsenal",
+      "Brand": "ADIDAS",
+      "image": "/images/ArsenalHome.jpg"
+    },
+    {
+      "_id": "ArsenalThird",
+      "title": "Arsenal Third 20/21",
+      "description": "Arsenal 20/21 Third Jersey Player Issue",
+      "price": 55,
+      "club": "Arsenal",
+      "Brand": "ADIDAS",
+      "image": "/images/ArsenalThird.jpg"
+    },
+    {
+      "_id": "ChelseaHome",
+      "title": "Chelsea Home 20/21",
+      "description": "Chelsea 20/21 Home Jersey Player Issue",
+      "price": 75,
+      "club": "Chelsea",
+      "Brand": "NIKE",
+      "image": "/images/ChelseaHome.jpg"
+    },
+    {
+      "_id": "ChelseaAway",
+      "title": "Chelsea Away 20/21",
+      "description": "Chelsea 20/21 Away Jersey Player Issue",
+      "price": 75,
+      "club": "Chelsea",
+      "Brand": "NIKE",
+      "image": "/images/ChelseaAway.jpg"
+    },
+    {
+      "_id": "ChelseaThird",
+      "title": "Chelsea Third 20/21",
+      "description": "Chelsea 20/21 Third Jersey Player Issue",
+      "price": 65,
+      "club": "Chelsea",
+      "Brand": "NIKE",
+      "image": "/images/ChelseaThird.jpg"
+    },
+    {
+      "_id": "CityAway",
+      "title": "Manchester City Away 20/21",
+      "description": "Manchester City Away 20/21 Player Issue",
+      "price": 60,
+      "club": "Manchester City",
+      "Brand": "PUMA",
+      "image": "/images/CityAway.jpg"
+    },
+    {
+      "_id": "CityHome",
+      "title": "Manchester City Home 20/21",
+      "description": "Manchester City 20/21 Home Jersey Player Issue",
+      "price": 60,
+      "club": "Manchester City",
+      "Brand": "PUMA",
+      "image": "/images/CityHome.jpg"
+    },
+    {
+      "_id": "EvertonHome",
+      "title": "Everton Home 20/21",
+      "description": "Everton 20/21 Home Jersey Player Issue",
+      "price": 55,
+      "club": "Everton",
+      "Brand": "HUMMEL",
+      "image": "/images/EvertonHome.jpg"
+    },
+    {
+      "_id": "EvertonAway",
+      "title": "Everton Away 20/21",
+      "description": "Everton 20/21 Away Jersey Player Issue",
+      "price": 50,
+      "club": "Everton",
+      "Brand": "HUMMEL",
+      "image": "/images/EvertonAway.jpg"
+    },
+    {
+      "_id": "LeicesterHome",
+      "title": "Leicester Home 20/21",
+      "description": "Leicester 20/21 Home Jersey Player Issue",
+      "price": 60,
+      "club": "Leicester City",
+      "Brand": "ADIDAS",
+      "image": "/images/LeicesterHome.jpg"
+    },
+    {
+      "_id": "LeicesterAway",
+      "title": "Leicester Away 20/21",
+      "description": "Leicester 20/21 Away Jersey Player Issue",
+      "price": 50,
+      "club": "Leicester City",
+      "Brand": "ADIDAS",
+      "image": "/images/LeicesterAway.jpg"
+    },
+    {
+      "_id": "LiverpoolAway",
+      "title": "Liverpool Away 20/21",
+      "description": "Liverpool 20/21 Away Jersey Player Issue",
+      "price": 75,
+      "club": "Liverpool",
+      "Brand": "NIKE",
+      "image": "/images/LiverpoolAway.jpg"
+    },
+    {
+      "_id": "LiverpoolHome",
+      "title": "Liverpool Home 20/21",
+      "description": "Liverpool 20/21 Home Jersey Player Issue",
+      "price": 75,
+      "club": "Liverpool",
+      "Brand": "NIKE",
+      "image": "/images/LiverpoolHome.jpg"
+    },
+    {
+      "_id": "LiverpoolThird",
+      "title": "Liverpool Third 20/21",
+      "description": "Liverpool 20/21 Third Jersey Player Issue",
+      "price": 60,
+      "club": "Liverpool",
+      "Brand": "NIKE",
+      "image": "/images/LiverpoolThird.jpg"
+    },
+    {
+      "_id": "SpursHome",
+      "title": "Tottenham Hotspur Home 20/21",
+      "description": "Tottenham Hotspur 20/21 Home Jersey Player Issue",
+      "price": 60,
+      "club": "Tottenham Hotspur",
+      "Brand": "NIKE",
+      "image": "/images/SpursHome.jpg"
+    },
+    {
+      "_id": "SpursAway",
+      "title": "Tottenham Hotspur Away 20/21",
+      "description": "Tottenham Hotspur 20/21 Away Jersey Player Issue",
+      "price": 65,
+      "club": "Tottenham Hotspur",
+      "Brand": "NIKE",
+      "image": "/images/SpursAway.jpg"
+    },
+    {
+      "_id": "UnitedAway",
+      "title": "Manchester United Away 20/21",
+      "description": "Manchester United 20/21 Away Jersey Player Issue",
+      "price": 65,
+      "club": "Manchester United",
+      "Brand": "ADIDAS",
+      "image": "/images/UnitedAway.jpg"
+    },
+    {
+      "_id": "UnitedThird",
+      "title": "Manchester United Third 20/21",
+      "description": "Manchester United 20/21 Third Jersey Player Issue",
+      "price": 50,
+      "club": "Manchester United",
+      "Brand": "ADIDAS",
+      "image": "/images/UnitedThird.jpg"
+    },
+    {
+      "_id": "UnitedHome",
+      "title": "Manchester United Home 20/21",
+      "description": "Manchester United Home 20/21 Player Issue",
+      "price": 75,
+      "club": "Manchester United",
+      "Brand": "ADIDAS",
+      "image": "/images/UnitedHome.jpg"
+    }
+    
+  ]
+}
