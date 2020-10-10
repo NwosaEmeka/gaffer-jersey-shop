@@ -7,7 +7,7 @@ import { filterByTeamAction, sortByPriceAction } from './Actions/FilterActions'
 export const initialState = {
   products: data.products,
   allTeams: data.products,
-  basket: JSON.parse(localStorage.getItem('basket')) || [],
+  basket: JSON.parse(localStorage.getItem('basketItem')) || [],
   user: null
 }
 
@@ -50,7 +50,7 @@ const reducer = (state, action) => {
         basket: removeItem(state.basket, action.payload)
       }
     case 'CLEAR_BASKET':
-      localStorage.setItem('basket', []);
+      localStorage.clear('basketItem');
       return {
         ...state,
         basket: []

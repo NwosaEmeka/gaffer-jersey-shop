@@ -5,7 +5,7 @@ export const increaseItem = (basket, item) => {
       currentItem.quantity++
     }
   })
-  localStorage.setItem('basket', JSON.stringify(newBasket));
+  localStorage.setItem('basketItem', JSON.stringify(newBasket));
   return newBasket
 }
 
@@ -19,12 +19,12 @@ export const decreaseItem = (basket, item) => {
       }
     }
   })
-  localStorage.setItem('basket', JSON.stringify(newBasket));
+  localStorage.setItem('basketItem', JSON.stringify(newBasket));
   return newBasket
 }
 
 export const removeItem = (basket, item) => {
   let newBasket = basket.filter(basketItem => basketItem._id !== item._id)
-  localStorage.setItem('basket', JSON.stringify(newBasket));
+  localStorage.setItem('basketItem', JSON.stringify(newBasket));
   return newBasket
 }

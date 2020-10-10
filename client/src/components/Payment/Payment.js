@@ -4,6 +4,7 @@ import {CurrencyFormatter} from '../../Utils/CurrencyFormatter'
 import axios from 'axios'
 import {useHistory} from 'react-router-dom'
 import { useStoreValue } from '../../contextApi/StateProvider'
+import { addToOrders } from '../Order_component/AddToOrder'
 
 
 function Payment({ total }) {
@@ -12,23 +13,24 @@ function Payment({ total }) {
 
   const [{ basket, user }, dispatch] = useStoreValue();
   const history = useHistory()
-  const onToken = (token) => {
-    axios.post('/payment', {
-      amount: totalPrice,
-      token
-    })
-      .then(res => {
-        alert("Your payment was successful")
-        // create and put order in database
 
-        // reset the basket
-        dispatch({
-          type: "CLEAR_BASKET"
-        })
-        // redirect to orders page
-        history.replace('/orders')
-    })
+  const onToken = async (token) => {
+    try {
+      const {data} = await axios.post('/payment', {amount: totalPrice, token})
+      await addToOrders(data.success, total, user, basket)
+      dispatch({
+        type: "CLEAR_BASKET"
+      })
+      alert("Thank You, your order has been placed")
+      history.replace('/orders')
+    }
+    catch (error) {
+      alert("Payment decline, please make sure you are using 4242 4242 4242 4242 as card type and any future date")
+    }
   }
+
+  
+  
   return (
     <StripeCheckout 
       label="SECURE CHECKOUT"
@@ -37,6 +39,9 @@ function Payment({ total }) {
       shippingAddress
       allowRememberMe
       amount={totalPrice}
+      locale='en'
+      alipay
+      bitcoin
       description={`Amount due is ${CurrencyFormatter(total)}`}
       token={onToken}
       panelLabel="SECURE CHECKOUT"

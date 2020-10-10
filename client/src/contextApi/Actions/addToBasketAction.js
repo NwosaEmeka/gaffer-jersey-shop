@@ -10,6 +10,6 @@ export const addtoBasketAction = (basket, product) => {
   if (!isInBasket) {
     basketItems.push({ ...product, quantity: 1 })
   }
-  localStorage.setItem('basket', JSON.stringify(basketItems));
+  localStorage.setItem('basketItem', JSON.stringify(basketItems));
   return basketItems;
 }
