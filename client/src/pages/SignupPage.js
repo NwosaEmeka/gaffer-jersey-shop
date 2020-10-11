@@ -35,7 +35,7 @@ function SignupPage() {
   }
   return (
     <div className="form__wrapper">
-      <h3>Forgot your password?</h3>
+      <h3>Account Registration</h3>
       <div className="form__group">
         <form>
           <AuthForm
