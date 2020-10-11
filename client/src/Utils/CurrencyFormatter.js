@@ -1,0 +1,1 @@
+export const CurrencyFormatter = (value) => (new Intl.NumberFormat('en-MY', {style: 'currency', currency: 'MYR'}).format(value))

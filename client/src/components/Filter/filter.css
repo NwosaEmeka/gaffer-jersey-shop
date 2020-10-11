@@ -1,0 +1,30 @@
+.filter__section{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 1rem;
+}
+
+.filter__section > *{
+  margin: 0.5rem 0; 
+}
+select{
+  font-family:'Montserrat', Helvetica,Arial, sans-serif;
+  display: inline-block;
+  padding: 0.3rem;
+  width: 15rem;
+  font-weight: 600;
+  color: #333;
+  font-size: 1rem;
+}
+.filter__section label,
+.filter__section p{
+  font-weight: 700;
+}
+
+@media(max-width: 50rem){
+  .filter__section{
+    padding-top:0rem;
+  }
+}
