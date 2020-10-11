@@ -1,5 +1,5 @@
 const express = require("express")
-const body_parse = require("body-parser")
+const bodyParse = require("body-parser")
 const cors = require('cors')
 const path = require('path')
 
@@ -10,8 +10,8 @@ const stripe = require('stripe')(process.env.STRIPE_SECRET_KEY)
 const app = express()
 const PORT = process.env.PORT || 5000
 
-app.use(body_parse.json())
-app.use(body_parse.urlencoded({extended: true}))
+app.use(bodyParse.json())
+app.use(bodyParse.urlencoded({extended: true}))
 app.use(cors())
 
 if (process.env.NODE_ENV === "production") {
@@ -35,7 +35,7 @@ app.post('/payment', (req, res) => {
       res.status(500).send({ error: stripeErr })
     } 
     else {
-      res.status(200).send(stripeRes)
+      res.status(200).send({success: stripeRes })
     }
   })
 })

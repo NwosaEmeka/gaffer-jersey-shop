@@ -25,12 +25,10 @@ function Payment({ total }) {
       history.replace('/orders')
     }
     catch (error) {
+      console.log(error)
       alert("Payment decline, please make sure you are using 4242 4242 4242 4242 as card type and any future date")
     }
   }
-
-  
-  
   return (
     <StripeCheckout 
       label="SECURE CHECKOUT"
