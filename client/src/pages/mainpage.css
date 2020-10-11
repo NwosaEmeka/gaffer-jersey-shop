@@ -48,7 +48,11 @@
 
 @media(max-width: 30rem){
   .main__content{
+<<<<<<< HEAD
     padding: 1rem 0.5rem;
+=======
+    padding: 2rem 0.5rem;
+>>>>>>> 5d9ddebcb83a8b233418251e748f7584abf24ee1
   }
   .banner__text{
     font-size:1.2rem;
