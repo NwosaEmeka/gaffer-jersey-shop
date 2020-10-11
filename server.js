@@ -35,7 +35,7 @@ app.post('/payment', (req, res) => {
       res.status(500).send({ error: stripeErr })
     } 
     else {
-      res.status(200).send({ success: stripeRes })
+      res.status(200).send(stripeRes)
     }
   })
 })
